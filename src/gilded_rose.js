@@ -12,13 +12,13 @@ class Shop {
     this.quality = quality;
   }
 
-class Backstage {
+class Backstage { // Classes heritage maybe with extend from 'Item' or 'Shop' 
     constructor(items=[]){
       this.sellIn = sellIn;
       this.quality = quality;
 }
 
-class AgedBrie {
+class AgedBrie { // Classes heritage maybe with extends from 'Item' or 'Shop' 
       constructor(items=[]){
         this.sellIn = sellIn;
         this.quality = quality;
