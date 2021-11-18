@@ -8,32 +8,38 @@ class Item {
 
 class Shop {
   constructor(items=[]){
-    this.items = items;
+    this.sellIn = sellIn;
+    this.quality = quality;
   }
 
 class Backstage {
     constructor(items=[]){
-      this.items = items;
+      this.sellIn = sellIn;
+      this.quality = quality;
 }
 
 class AgedBrie {
       constructor(items=[]){
-        this.items = items;
+        this.sellIn = sellIn;
+        this.quality = quality;
 }  
 
 class Conjured {
      constructor(items=[]){
-     this.items = items;
+    this.sellIn = sellIn;
+    this.quality = quality;
 }   
    
 class NormalItem {
     constructor(items=[]){
-    this.items = items;
+      this.sellIn = sellIn;
+      this.quality = quality;
 }
 
 class Sulfuras {
     constructor(items=[]){
-    this.items = items;
+      this.sellIn = sellIn;
+      this.quality = quality;
 }
 
    //   
