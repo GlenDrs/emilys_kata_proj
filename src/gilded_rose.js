@@ -6,41 +6,43 @@ class Item {
   }
 }
 
-class Shop {
+class IntermediatelItem extends Item {
+  constructor(name, sellIn, quality) {
+    super(name, sellIn, quality);
+  }
+  updateItemSellIn() {
+    this.sellIn--;
+  } }
+
+class Shop extends IntermediatelItem{
   constructor(items=[]){
     this.sellIn = sellIn;
     this.quality = quality;
-  }
+  } }
 
-class Backstage { // Classes heritage maybe with extend from 'Item' or 'Shop' 
+class Backstage extends IntermediatelItem{ 
     constructor(items=[]){
       this.sellIn = sellIn;
       this.quality = quality;
-}
+} }
 
-class AgedBrie { // Classes heritage maybe with extends from 'Item' or 'Shop' 
+class AgedBrie extends IntermediatelItem{ 
       constructor(items=[]){
         this.sellIn = sellIn;
         this.quality = quality;
-}  
+}  }
 
-class Conjured {
+class Conjured extends IntermediatelItem{
      constructor(items=[]){
     this.sellIn = sellIn;
     this.quality = quality;
-}   
-   
-class NormalItem {
+}   }
+ 
+class Sulfuras extends IntermediatelItem{
     constructor(items=[]){
       this.sellIn = sellIn;
       this.quality = quality;
-}
-
-class Sulfuras {
-    constructor(items=[]){
-      this.sellIn = sellIn;
-      this.quality = quality;
-}
+} }
 
    //   
 
@@ -93,7 +95,7 @@ class Sulfuras {
 
     return this.items;
   }
-}
+
 module.exports = {
   Item,
   Shop,
